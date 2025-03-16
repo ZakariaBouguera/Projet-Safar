@@ -46,10 +46,25 @@ create Table voyages (
 create Table Reserver (
     num_client int,
     num_voyage int,
-    date_reservation varchar (50),
-    date_annulation varchar (50),
+    date_reservation date not null,
+    date_annulation date,
     foreign key (num_client) references client(id),
     foreign key (num_voyage) references voyages(id_voyage),
     primary key (num_client, num_voyage)
 );
 
+create table Activite(
+   idActivite int,
+   nomActivite varchar(15),
+   ageMax int,
+   primary key(idActivite)
+);
+
+create table Posseder(
+   idActivite int,
+   id_voyage int,
+   accompte int,
+   foreign key(idActivite) references Activite(idActivite),
+   foreign key(id_voyage) references voyages(id_voyage),
+   primary key(idActivite, id_voyage)
+);
