@@ -20,6 +20,7 @@ insert into voyages (id_voyage, ville_arriver, ville_depart, tarif, num_hotel, n
 insert into Reserver ( num_client, num_voyage, date_reservation, date_annulation) values 
 (1, 100, "2025-01-25", "2025-01-26"),
 (1, 101, "2025-01-25", null );
+<<<<<<< HEAD
 
 insert into Activite values 
 (1, "JetSki", 18),
@@ -28,3 +29,5 @@ insert into Activite values
 insert into Posseder values 
 (1, 102, 25),
 (2, 101, 350);
+=======
+>>>>>>> origin/main
