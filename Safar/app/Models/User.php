@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\Http\Controllers\ClientController;
+use PDO;
+use PDOException ;
 
 class User extends Authenticatable
 {
@@ -45,7 +48,7 @@ class User extends Authenticatable
     private static $connexion = null ; 
 
     private function __construct(){
-        self::$connexion = new PDO('mysql:host=localhost;dbname=Safer', 'user', 'azerty');
+        self::$connexion = new PDO('mysql:host=localhost;dbname=Safar', 'boss', 'azerty');
     }
 
     private static function getConnexion(){
@@ -72,5 +75,22 @@ class User extends Authenticatable
         $st -> closeCursor() ; 
 
     }
+
+    public static function getConnexionP($email, $mdp){
+        $bd = self::getConnexion();
+
+        $sql = "select nom, prenom from client where email = :email and mdp = :mdp";
+
+        $st = $bd->prepare($sql);
+
+        $st->execute(array(':email' => $email, ':mdp' => $mdp));
+
+        $client = $st ->fetch(PDO::FETCH_ASSOC);
+
+        $st->closeCursor();
+
+        return $client;
+    }
+
 
 }

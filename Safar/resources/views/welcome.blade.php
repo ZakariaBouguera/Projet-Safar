@@ -3,23 +3,23 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
 
-=======
+
+
         <link rel="stylesheet" type="text/css" href="{{ asset ('css/welcome.css')}}">
->>>>>>> origin/main
+
         <title>Safar</title>
 
     </head>
     <body>
-<<<<<<< HEAD
+
         
 		<div  class = "db"> 
 			<a href= "/Client/Profil" style = "color:black;"> Profil</a> 
 			<a href= "/Client/Reservation" style = "color:black;"> Réservation</a> 
 			<a href= "/Client/ConsulterSejour" style = "color:black;"> Séjour</a> 
 		</div>
-=======
+
         <div class= "imagePrincipale">
             <img src="{{ asset('photos/imageAccueil.jpeg')}}">
         </div>
@@ -47,6 +47,5 @@
         </div>
     </div>
 
->>>>>>> origin/main
     </body>
 </html>
