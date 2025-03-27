@@ -5,7 +5,10 @@ use Illuminate\Http\Request;
 
 Class ClientController extends Controller {
     public function ConnexionClient (){
-        return view ('ConnexionClient');
+        $login = $_POST ['login'];
+        $mdp = $_POST ['password'];
+        $requete = "select nom , prenom from client where login = '$login' and mdp = '$mdp'";
+
     }
     public function ConnecterClient (Request $req){
         return "Bonjour : ".$req-> input('login');
