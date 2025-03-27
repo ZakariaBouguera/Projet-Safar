@@ -23,10 +23,11 @@
 		<div  class = "db"> 
             <a href= "/" style = "color:black;"> Accueil </a>
 			<a href= "/Client/Profil" style = "color:black;"> Profil</a> 
+			<a href= "/Client/Reservation" style = "color:black;"> Réservation</a> 
 			<a href= "/Client/ConsulterSejour" style = "color:black;"> Séjour</a>             
 		</div>        
        
-    <div class="voyages"  onclick="alert('Merci de vous connecter !')">
+    <div class="voyages" >
         <div class="voyage">
             <img src="{{ asset('photos/avionParis.jpg')}}" alt="Alger" class="photoAvion" width="100">
             <div class = "voyage-text"> Voyager de Paris à Alger</div>

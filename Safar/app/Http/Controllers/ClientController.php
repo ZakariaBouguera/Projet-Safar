@@ -24,7 +24,7 @@ Class ClientController extends Controller {
             $_SESSION["prenom"] = $client["prenom"];
 
             //header("Location: /");
-            return view('welcome');
+            return view('ConnecterClient');
 
         }
         else{
