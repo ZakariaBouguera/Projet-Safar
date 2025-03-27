@@ -42,10 +42,6 @@
 
 .titre {
 	width: 98.3%;
-	position: absolute;
-	left: 0%;
-	right: 0%;
-	top: 0%;
     background-color : rgb(39, 117, 190);
     color: white;
     text-align: center;
