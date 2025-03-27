@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" type="text/css" href="{{ asset ('css/welcome.css')}}">
+
+
 
 
         <link rel="stylesheet" type="text/css" href="{{ asset ('css/welcome.css')}}">
@@ -15,7 +18,7 @@
 
         
 		<div  class = "db"> 
-			<a href= "/Client/Profil" style = "color:black;"> Profil</a> 
+			<a href= "/Client/Connexion" style = "color:black;"> Profil</a> 
 			<a href= "/Client/Reservation" style = "color:black;"> Réservation</a> 
 			<a href= "/Client/ConsulterSejour" style = "color:black;"> Séjour</a> 
 		</div>
@@ -27,7 +30,7 @@
         <div class = "titre"> Nos Séjours </div>
 
 		<div  class = "db"> 
-			<a href= "/Client/Profil" style = "color:black;"> Profil</a> 
+			<a href= "/Client/Connexion" style = "color:black;"> Profil</a> 
 			<a href= "/Client/Reservation" style = "color:black;"> Réservation</a> 
 			<a href= "/Client/ConsulterSejour" style = "color:black;"> Séjour</a>             
 		</div>        
@@ -47,5 +50,5 @@
         </div>
     </div>
 
-    </body>
+
 </html>
