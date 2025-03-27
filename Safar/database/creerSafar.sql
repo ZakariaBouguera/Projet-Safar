@@ -10,6 +10,7 @@ create Table client (
     age int,
     email varchar(200),
     tel int,
+    mdp varchar (50),
 	primary key ( id )
 );
 
@@ -20,6 +21,7 @@ create Table responsable (
     prenom varchar (50),
     email varchar(200),
     tel int,
+    mdp varchar (50),
 	primary key ( matricule )
 );
 

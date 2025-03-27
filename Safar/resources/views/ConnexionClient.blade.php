@@ -1,4 +1,4 @@
-<form method="POST" action="/clients/connecter" />
+<form method="POST" action="/clients/connecter" >
 
 {{csrf_field()}}
 
