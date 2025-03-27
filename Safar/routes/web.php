@@ -19,6 +19,8 @@ use App\Http\Controllers\ResponsableController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/Client/Connexion',[ClientController::class,'ConnexionClient']);
+Route::post('/Client/Connecter',[ClientController::class,'ConnecterClient']);
 Route::get('/Client/Profil',[ClientController::class,'ConsulterProfil']);
 Route::get('/Client/Reservation',[ClientController::class,'ReserverSejour']);
 Route::get('/Client/AnnulerReservation',[ClientController::class,'AnnulerReservation']);
