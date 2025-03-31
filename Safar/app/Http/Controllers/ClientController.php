@@ -7,9 +7,14 @@ use App\Models\User;
 
 Class ClientController extends Controller {
     
-    public function ConnexionClient (){
+    public function ConnexionClient(Request $request) {
+        $login = $request->input('email'); 
+        $mdp = $request->input('mdp');
+    
+
         return view('ConnexionClient');
     }
+    
 
     public function ConnecterClient (){
         $email = $_POST['email'];
@@ -33,11 +38,44 @@ Class ClientController extends Controller {
         }
     }
 
+
+    public function AfficherAccueil() {
+        return view('ConnecterClient');
+    }
+
+    public function Inscription(Request $request)
+    {
+        try {
+            \App\Models\User::enregistrerClient(
+                $request->input('nom'),
+                $request->input('prenom'),
+                $request->input('email'),
+                $request->input('age'),
+                $request->input('tel'),
+                $request->input('mdp')
+            );
+    
+            return redirect('Client/Connexion')->with('success', 'Inscription réussie !');
+    
+        } catch (\Exception $e) {
+            dd("Erreur : " . $e->getMessage()); 
+        }
+    }
+
+    public function Formulaire() {
+        return view('Inscription');
+    }
+    
+
     public function ConsulterProfil (){
         return view ('ConsulterProfil');
     }
-    public function ReserverSejour (){
-        return view ('Reservation');
+    public function ReserverSejour(Request $request){
+        $date = $request->input('date_sejour');
+        return view('Reservation', ['date' => $date]);
+    }
+    public function ReservationSejour (){
+        return view ('ReserverSejour');
     }
     public function AnnulerReservation(){
         return view ('AnnulerReservation');
@@ -45,7 +83,6 @@ Class ClientController extends Controller {
     public function ConsulterSejour(){
         return view ('ConsulterSejour');
     }
-
 
 }
 ?>

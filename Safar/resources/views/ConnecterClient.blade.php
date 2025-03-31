@@ -24,7 +24,7 @@
             <a href= "/" style = "color:black;"> Accueil </a>
 			<a href= "/Client/Profil" style = "color:black;"> Profil</a> 
 			<a href= "/Client/Reservation" style = "color:black;"> Réservation</a> 
-			<a href= "/Client/ConsulterSejour" style = "color:black;"> Séjour</a>             
+			<a href= "/Client/ReserverSejour" style = "color:black;"> Séjour</a>             
 		</div>        
        
     <div class="voyages" >
