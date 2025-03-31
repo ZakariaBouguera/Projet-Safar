@@ -79,7 +79,7 @@ class User extends Authenticatable
     public static function getConnexionP($email, $mdp){
         $bd = self::getConnexion();
 
-        $sql = "select nom, prenom from client where email = :email and mdp = :mdp";
+        $sql = "SELECT nom, prenom FROM client WHERE email = :email AND mdp = :mdp";
 
         $st = $bd->prepare($sql);
 

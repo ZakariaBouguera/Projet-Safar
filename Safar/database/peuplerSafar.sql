@@ -18,7 +18,7 @@ insert into voyages (id_voyage, ville_arriver, ville_depart, tarif, num_hotel, n
 (102, "Alger", "Paris", "50€", 10, 2);
 
 insert into Reserver ( num_client, num_voyage, date_reservation, date_annulation) values 
-(1, 100, "2025-01-25", "2025-01-26"),
+(1, 100, "2025-01-25", "2025-02-06"),
 (1, 101, "2025-01-25", null );
 
 insert into Activite values 
