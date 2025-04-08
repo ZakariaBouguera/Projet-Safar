@@ -31,8 +31,8 @@
 
         <form action="/Client/Reservation" method="GET">
             @csrf
-            <label for="date_sejour">Date de séjour :</label>
-            <select name="date_sejour" id="date_sejour">
+            <label for="date_sejour">Date de séjour disponible pour Paris-Alger :</label>
+            <select name="date_sejour" id="date_sejour_alger">
                 <option value="2025-04-10">10 Avril 2025</option>
                 <option value="2025-05-15">15 Mai 2025</option>
                 <option value="2025-06-01">1 Juin 2025</option>
@@ -40,5 +40,31 @@
             <button type="submit">Réserver</button>
         </form>
 
+        <br><br><br>
+
+        <form action="/Client/Reservation" method="GET">
+            @csrf
+            <label for="date_sejour">Date de séjour disponible pour Alger-Pukhet :</label>
+            <select name="date_sejour" id="date_sejour_pukhet">
+                <option value="2025-04-14">14 Avril 2025</option>
+                <option value="2025-05-18">18 Mai 2025</option>
+                <option value="2025-06-09">09 Juin 2025</option>
+            </select>
+            <button type="submit">Réserver</button>
+        </form>
+
+        <br><br><br>
+
+        <form action="/Client/Reservation" method="GET">
+            @csrf
+            <label for="date_sejour">Date de séjour disponible pour Alger-Paris :</label>
+            <select name="date_sejour" id="date_sejour_paris">
+                <option value="2025-04-29">29 Avril 2025</option>
+                <option value="2025-09-15">15 Août 2025</option>
+                <option value="2025-11-30">30 Novembre 2025</option>
+            </select>
+            <button type="submit">Réserver</button>
+        </form>
+        <br><br><br>
     </body>
 </html>

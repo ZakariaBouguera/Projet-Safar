@@ -25,7 +25,7 @@
 
 		<div  class = "db"> 
             <a href= "/" style = "color:black;"> Accueil </a>
-			<a href= "/Client/Profil" style = "color:black;"> Profil</a> 
+			<a href= "/Client/Connexion" style = "color:black;"> Profil</a> 
 			<a href= "/Client/ConsulterSejour" style = "color:black;"> Séjour</a>             
 		</div>        
        
