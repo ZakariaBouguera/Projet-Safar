@@ -8,8 +8,7 @@
     <body>
         <div  class = "db"> 
             <a href= "/" style = "color:black;"> Accueil </a>   
-			<a href= "/Client/Profil" style = "color:black;"> Profil</a> 
-			<a href= "/Client/Reservation" style = "color:black;"> Réservation</a> 
+			<a href= "/Client/Connexion" style = "color:black;"> Profil</a> 
 			<a href= "/Client/ConsulterSejour" style = "color:black;"> Séjour</a> 
 	    </div>
 
@@ -18,11 +17,11 @@
             <img src="{{ asset('photos/avionParis.jpg')}}" alt="Alger" class="photoAvion" width="100">
             <div class = "voyage-text"> Voyager de Paris à Alger</div>
         </div>
-        <div class="voyage" onclick="alert('Voyage à Pukhet réservé !')">
+        <div class="voyage" onclick="alert('Évadez-vous d Alger vers le paradis exotique de Phuket ! Plages de sable fin, eaux turquoise et couchers de soleil inoubliables vous attendent. Entre temples majestueux, cuisine thaïlandaise savoureuse et aventures tropicales, ce voyage promet détente et émerveillement. Réservez votre vol et laissez-vous transporter vers un rêve éveillé !')">
             <img src="{{ asset('photos/avionPukhet.jpg')}}" class="photoAvion" alt="Pukhet">
             <div class = "voyage-text"> Voyager de Alger à Pukhet</div>
         </div>
-        <div class="voyage" onclick="alert('Voyage à Paris réservé !')">
+        <div class="voyage" onclick="alert('Partez d Alger à la découverte de Paris, la ville lumière ! Entre monuments emblématiques, balades romantiques et ambiance chic, chaque coin de rue raconte une histoire. Laissez-vous séduire par la magie parisienne, sa gastronomie raffinée et son art de vivre unique. Un voyage inoubliable vous attend au cœur de l élégance ! ')">
             <img src="{{ asset('photos/avionAlger.jpg')}}" class = "photoAvion" alt="Paris">
             <div class = "voyage-text"> Voyager de Alger à Pukhet</div>
         </div>

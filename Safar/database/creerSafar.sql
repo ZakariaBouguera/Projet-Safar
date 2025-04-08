@@ -4,13 +4,13 @@ create database Safar ;
 use Safar ;
 
 create Table client (
-	id  int ,
+	id  INT AUTO_INCREMENT,
 	nom varchar (50) ,
     prenom varchar (50),
     age int,
     email varchar(200),
     tel int,
-    mdp varchar (50),
+    mdp varchar (155500),
 	primary key ( id )
 );
 

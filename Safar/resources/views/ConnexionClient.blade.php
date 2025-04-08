@@ -56,16 +56,22 @@
     <div class="container">
         <h2>Connexion</h2>
         <form method="POST" action="/Client/Connecter">
+            @csrf
             <label for="nom">Nom de Connexion :</label>
-            <input type="text" name="email" required>
+            <input type="text" name='email' required>
             
             <label for="mdp">Mot de passe :</label>
-            <input type="password" name="mdp" required>
+            <input type="password" name='mdp' required>
             
             <input type="submit" value="Se connecter">
             
             {{csrf_field()}}
+            <p style="text-align: center; margin-top: 10px;">
+            Pas encore de compte ?
+            <a href="/Client/Inscription">Inscrivez-vous</a>
+            </p>
         </form>
     </div>
+
 </body>
 </html>

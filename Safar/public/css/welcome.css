@@ -26,6 +26,21 @@
 .db a[href="/Client/ConsulterSejour"]:hover {
 	font-weight: bold;
 }
+.db a[href="/Client/ReserverSejour"]:hover {
+	font-weight: bold;
+}
+.db a[href="/Client/Connecter"]:hover {
+	font-weight: bold;
+}
+.db a[href="/"]:hover {
+	font-weight: bold;
+}
+.db a[href="/Client/Connexion"]:hover {
+	font-weight: bold;
+}
+
+
+
 .imagePrincipale{
 	width: 95%;
 	background-size: cover;
